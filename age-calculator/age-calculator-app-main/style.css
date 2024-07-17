@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+body{
+    background-color: hsl(0, 0%, 86%);
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap:30px;
+}
+.container{
+    background-color: hsl(0, 0%, 100%);
+    width: max-content;
+    margin: 0px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+    transform: translateY(20%);
+    border-bottom-right-radius: 250px;
+}
+.date-box,.month-box,.year-box:hover{
+    cursor: pointer;
+}
+.date-container{
+    margin-left: 26px;
+}
+.date-container,.month-container,.year-container{
+    display:flex;
+    flex-direction: column;
+    margin-top: 26px;
+    gap:5px;
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-size: 20px;
+    color:hsl(0, 1%, 44%);
+}
+.date-box,.month-box,.year-box{
+    border:2px solid hsl(0, 0%, 86%);
+    border-radius:6px;
+}
+.date-input,.month-input,.year-input{
+    outline: none;
+    border: none; 
+    font-size: 26px;
+    max-width:150px;
+    padding: 14px;
+    font-weight: 700;
+   }
+.year-container{
+margin-right: 200px;
+   }
+/* to remove side arrows of input fields */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+-webkit-appearance: none; 
+    margin: 0; 
+}
+span{
+    font-size: 13px;
+    color:red;
+    font-weight: 300;
+}
+hr{
+    margin-left: 20px;
+    max-width:650px;
+}
+.arrow{
+    background-color: hsl(259, 100%, 65%);
+    border: 2px solid black;
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    margin-left: 630px;
+    margin-top: -30px;
+}
+h1 span{
+    color:hsl(259, 100%, 65%);
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Poppins';
+}
+h1{
+    font-family: 'Poppins';
+    font-size: 60px;
+    font-weight: 700;
+    margin-left: 24px;
+}
+.results{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.arrow:hover{
+cursor: pointer;
+}
+
+@media(width<376px){
+    .year-container{
+        margin-right: 20px;
+           } 
+           .info{
+            padding-left: 10px;
+           } 
+           .arrow{
+            margin-left: 250px;
+           }  
+           .container{
+            border-bottom-right-radius: 150px;
+           }  
+           .date-container{
+            margin-left: 20px;
+        }         
+}
